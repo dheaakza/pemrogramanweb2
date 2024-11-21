@@ -1,6 +1,10 @@
 <?=$this->extend('layout');?>
 
 <?=$this->section('main')?>
+<div class="container">
+<?=$this->extend('layout');?>
+
+<?=$this->section('main')?>
     <div class="container">
         <div class="row bg-primary-subtle">
             <div class="col-6 p-5">
@@ -10,7 +14,7 @@
             </div>
             <div class="col-6 p-5">
                 <h1>Temukan Buku Favorit Anda</h1>
-                <form action="<?= base_url('search')?>" method="GET">
+                <form action="">
                     <div class="mb-3">
                         <input type="text" name = "judul" id = "judul" class= "form-control" placeholder="Judul Buku">
                     </div>
@@ -33,7 +37,7 @@
 
         <div class="row mt-5">
             <div class="col-12">
-                <h2 class="mb-3">Buku Best Seller</h2>
+                <h2 class="mb-3">Hasil Pencarian</h2>
                 <div class="row">
                     <div class="col-4">
                     <div class="card">
@@ -100,3 +104,5 @@
         </div>
     </div>
     <?=$this->endSection();?>
+</div>
+<?= $this->endSection()?>
